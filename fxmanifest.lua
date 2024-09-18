@@ -8,7 +8,7 @@ version '1.0'
 shared_scripts {
     '@es_extended/imports.lua',
     'config.lua',
-    'locales/pl.lua'
+    'locales/*.lua'
 }
 
 server_scripts {
