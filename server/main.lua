@@ -17,10 +17,25 @@ function _U(key, ...)
     return string.format(Locales[locale][key] or key, ...)
 end
 
+local maxPlateLength = Config.PlateLength
+
+function validatePlateLength(plate)
+    if #plate > maxPlateLength then
+        return false, _U('plate_length_exceeded')
+    end
+    return true
+end
+
 ESX.RegisterCommand('givecar', Config.AdminGroups, function(xPlayer, args, showError)
     local targetPlayer = ESX.GetPlayerFromId(args.playerId)
     local vehicleModel = args.model
     local plate = args.plate
+
+    local isValid, errorMsg = validatePlateLength(plate)
+    if not isValid then
+        showError(errorMsg)
+        return
+    end
 
     if targetPlayer then
         local playerIdentifier = targetPlayer.getIdentifier()
