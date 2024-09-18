@@ -5,10 +5,24 @@ author 'redsan1312'
 description 'Komendy na givecar oraz savecar'
 version '1.0'
 
-server_scripts {
+client_scripts {
+    '@es_extended/locale.lua',
+    '@es_extended/imports.lua',
+    'client/main.lua'  
+}
+
+lua54 'yes'
+
+shared_scripts {
+    '@es_extended/locale.lua',
+    '@es_extended/imports.lua',
     'config.lua',
-    'locales/pl.lua',
-    'server.lua'
+    'locales/*.lua'
+}
+
+server_scripts {
+    '@mysql-async/lib/MySQL.lua',
+    'server/main.lua'
 }
 
 dependencies {

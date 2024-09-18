@@ -2,7 +2,7 @@
 
 ## English
 
-This script is designed for use with the ESX framework in FiveM. It allows server administrators to manage vehicles with two main commands: `givecar` and `savecar`.
+This script is designed for use with the ESX Legacy (with oxmysql) framework in FiveM. It allows server administrators to manage vehicles with two main commands: `givecar` and `savecar`.
 
 ### Features
 
@@ -35,8 +35,8 @@ This script is designed for use with the ESX framework in FiveM. It allows serve
 2. Ensure you have the necessary dependencies installed, such as ESX and MySQL.
 3. Add the script to your `server.cfg`:
    ```plaintext
-   start your_script_name
-
+   start redsan_savecar
+   ```
 Usage
 givecar
 
@@ -63,7 +63,7 @@ This script is open source and available under the MIT License. See LICENSE for 
 _____________________________________________________________
 ## Polski / Polish
 
-Ten skrypt jest przeznaczony do użycia z frameworkiem ESX w FiveM. Umożliwia administratorom serwera zarządzanie pojazdami za pomocą dwóch głównych komend: givecar i savecar.
+Ten skrypt jest przeznaczony do użycia z frameworkiem ESX Legacy (z oxmysql) w FiveM. Umożliwia administratorom serwera zarządzanie pojazdami za pomocą dwóch głównych komend: givecar i savecar.
 Funkcje
 
     givecar: Przyznaje pojazd określonemu graczowi.
@@ -73,37 +73,30 @@ Konfiguracja
 
     Domyślny Język:
         Ustaw domyślny język w config.lua:
-
-        lua
-
+   ```lua
     Config.Locale = 'pl' -- Zmień 'pl' na preferowany kod języka
-
+   ```
 Grupy Administratorów:
 
     Określ, które grupy mogą używać komend:
-
-    lua
-
+   ```lua
     Config.AdminGroups = {'admin', 'superadmin'}
-
+   ```
 Długość Tablicy Rejestracyjnej:
 
     Ustaw maksymalną długość tablicy rejestracyjnej pojazdu:
-
-    lua
-
+   ```lua
         Config.PlateLength = 8
-
+   ```
 Instalacja
 
     Umieść skrypt w katalogu resources.
     Upewnij się, że masz zainstalowane niezbędne zależności, takie jak ESX i MySQL.
     Dodaj skrypt do server.cfg:
+```plaintext
 
-    plaintext
-
-    start nazwa_twojego_skryptu
-
+    start redsan_savecar
+```
 Użycie
 givecar
 
