@@ -8,5 +8,6 @@ Locales['pl'] = {
     ['player_id'] = 'ID gracza',
     ['vehicle_model'] = 'Model pojazdu',
     ['plate'] = 'Tablica rejestracyjna',
-    ['save_command_car'] = 'Zapisz aktualny pojazd jako prywatny'
+    ['save_command_car'] = 'Zapisz aktualny pojazd jako prywatny',
+    ['plate_length_exceeded'] = 'Długość tablicy rejestracyjnej przekracza dozwoloną długość.'
 }
