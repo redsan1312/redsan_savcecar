@@ -88,7 +88,7 @@ AddEventHandler('esx_giveownedcar:setVehicleProperties', function(vehicleProps, 
     })
 end)
 
-ESX.RegisterCommand('savecar', 'user', function(xPlayer)
+ESX.RegisterCommand('savecar', Config.AdminGroups, function(xPlayer)
     local playerPed = GetPlayerPed(xPlayer.source)
     local vehicle = GetVehiclePedIsIn(playerPed, false)
 
