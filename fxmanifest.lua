@@ -8,7 +8,7 @@ version '1.0'
 server_scripts {
     'config.lua',
     'locales/pl.lua',
-    'server.lua'
+    'server/main.lua'
 }
 
 dependencies {
