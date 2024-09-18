@@ -9,5 +9,6 @@ Locales['pl'] = {
     ['vehicle_model'] = 'Model pojazdu',
     ['plate'] = 'Tablica rejestracyjna',
     ['save_command_car'] = 'Zapisz aktualny pojazd jako prywatny',
-    ['plate_length_exceeded'] = 'Długość tablicy rejestracyjnej przekracza dozwoloną długość.'
+    ['invalid_vehicle_model'] = 'Nieprawidłowy model pojazdu.',
+    ['plate_length_exceeded'] = 'Tablica rejestracyjna przekracza dozwoloną długość.'
 }
